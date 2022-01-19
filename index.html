@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>simple Slider</title>
+</head>
+<body>
+
+    <div class="slider-container" id="slider">
+
+        <div class="buttons">
+            <input type="radio"  class="slider-radio" checked onclick="showingNow(1);">
+            <input type="radio" class="slider-radio" onclick="showingNow(2);">
+            <input type="radio" class="slider-radio" onclick="showingNow(3);">
+        </div>
+       <!--  
+        <div class="pagination">
+            <label for="slide-radio1">1</label>
+            <label for="slide-radio2">2</label>
+            <label for="slide-radio3">3</label>
+        </div> -->
+        
+        <a class="next" onclick="nextSlide(-1);">&#10095;</a>
+        <a class="prev" onclick="nextSlide(1);">&#10094;</a>
+      
+        <div class="slider fade" id="slider1">
+            <img src="s-l1600.png" alt="">
+        </div>
+        <div class="slider fade" id="slider1">
+            <img src="s-l1600r.jpg" alt="">
+        </div>
+        <div class="slider fade" id="slider1">
+            <img src="s-l1600v.jpg" alt="">
+        </div>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
